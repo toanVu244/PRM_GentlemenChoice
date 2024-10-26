@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Lab10</string>
+    <string name="app_name">GentlemenChoice</string>
     <string-array name="map_types">
         <item>Normal</item>
         <item>Satellite</item>
