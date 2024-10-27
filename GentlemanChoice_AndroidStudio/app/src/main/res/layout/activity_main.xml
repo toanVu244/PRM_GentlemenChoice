@@ -53,10 +53,10 @@
 
         <ImageView
             android:id="@+id/header_image_logo"
-            android:layout_width="36dp"
-            android:layout_height="36dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/custom_store_logo"
+            android:src="@drawable/gentlemen_logo_custom"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/header_section" />
@@ -65,7 +65,7 @@
             android:id="@+id/welcome_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Rolex Việt Nam"
+            android:text="Gentlemen Choice"
             android:textColor="@color/black"
             android:gravity="center"
             android:textSize="15sp"
