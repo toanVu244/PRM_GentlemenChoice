@@ -125,7 +125,7 @@ public class CartFragment extends Fragment {
         for (CartItem item : items) {
             totalPrice += item.getProductVIew().getPrice() * item.getQuantity();
         }
-        totalPriceTextView.setText(String.format("%.2f VND", totalPrice));
+        totalPriceTextView.setText(String.format("%d VND", (int) totalPrice));
     }
 
     public void updateTotalPrice() {
