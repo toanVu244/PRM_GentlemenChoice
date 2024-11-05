@@ -60,7 +60,7 @@ public class CartItemRecyclerViewAdapter extends RecyclerView.Adapter<CartItemRe
     public void onBindViewHolder(@NonNull CartItemRecyclerViewAdapter.ViewHolder holder, int position) {
         CartItem cart = items.get(position);
         holder.textViewName.setText(cart.getProductVIew().getName());
-        holder.textViewPrice.setText(String.format("%d VND", (int) cart.getProductVIew().getPrice()));
+        holder.textViewPrice.setText(String.format("%.2f VND", cart.getProductVIew().getPrice()));
         holder.quantityEditText.setText(String.valueOf(cart.getQuantity()));
         // Load image using Glide
         if (cart.getProductVIew().getImages() != null && !cart.getProductVIew().getImages().isEmpty()) {

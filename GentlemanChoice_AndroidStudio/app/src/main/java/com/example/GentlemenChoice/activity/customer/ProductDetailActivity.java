@@ -68,7 +68,7 @@ public class ProductDetailActivity extends AppCompatActivity {
         if (product != null) {
             productNameTextView.setText(product.getName());
             productDescriptionTextView.setText(product.getDescription());
-            productPriceTextView.setText(String.format("%d VND", (int) product.getPrice()));
+            productPriceTextView.setText(String.format("%.2f VND", product.getPrice()));
             productStatusTextView.setText(product.getQuantity() > 0 ? "Sản phẩm còn hàng" : "Sản phẩm đã hết hàng");
             productStatusTextView.setTextColor(getResources().getColor(product.getQuantity() > 0 ? R.color.green : R.color.red));
 
